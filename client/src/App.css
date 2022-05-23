@@ -22,7 +22,7 @@
 
 button {
   width: 150px;
-  height: 50px;
+  height: 44px;
   margin-top: 15px;
 }
 
@@ -38,17 +38,26 @@ button {
 }
 
 .item {
+  align-items: center;
+  flex-direction: horizontal;
   height: 80px;
   border: 1px solid black;
   margin: 6px;
+  padding-left: 30px;
+  padding-right: 30px;
   display: flex;
   width:auto;
   font-family: 'Courier New', Courier, monospace
+}
 
+.upperHeader {
+  margin: 3px;
+  padding-top: 6px;
+  font-family: 'Courier New', Courier, monospace
 }
 
 .item h3 {
-  margin: 30px;
+  margin-right: 30px;
 }
 
 .deletedButton {
@@ -60,9 +69,10 @@ button {
 }
 
 .smallButton {
+  margin-top: 2px;
   padding: -5px;
-  height: 20px;
-  width: 50px;
+  height: 24px;
+  width: 58px;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -71,8 +81,9 @@ button {
 
 .mediumButton {
   margin-right: 28px;
-  height: 45px;
-  width: 80px;
+  margin-bottom: 15px;
+  height: 30px;
+  width: 74px;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -80,9 +91,17 @@ button {
 }
 
 .centeredDiv {
-
   align-items: center;
   flex-direction: column;
   justify-content: center;
   display:flex;
+}
+
+.deletion {
+  font-size: small;
+}
+
+.updateOrDeleteBox {
+  width: 140px;
+  margin: 2px;
 }
