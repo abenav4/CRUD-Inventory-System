@@ -37,7 +37,7 @@ function App() {
       (response) => {
         setItemList(
           itemList.map((val) => {
-            return val.id == id
+            return val.id === id
               ? {
                   id: val.id,
                   name: val.name,
@@ -58,7 +58,7 @@ function App() {
       (response) => {
         setItemList(
           itemList.map((val) => {
-            return val.id == id
+            return val.id === id
               ? {
                   id: val.id,
                   name: val.name,
@@ -77,12 +77,12 @@ function App() {
     <div className="App">
       <div className="itemContainer">
 
-        <label>Name:</label>
+        <label className='upperHeader'>Name:</label>
         <input type = "text" onChange={(event) => {
           setName(event.target.value)
         }} />
         
-        <label>Quantity:</label>
+        <label className='upperHeader' >Quantity:</label>
         <input type = "number" onChange={(event) => {
           setQuantity(event.target.value)
         }} />
@@ -102,14 +102,16 @@ function App() {
          <div className ="item" key={key}>
               <h3>Name: {val.name}</h3> 
               <h3>Quantity: {val.quantity}</h3>
+
               <div className='centeredDiv'>
-                <input type = "text" 
-                placeholder = "Update Quantity" onChange={(event)=>setNewQuantity(event.target.value)}/>
+                <input className ="updateOrDeleteBox" type = "text" 
+                placeholder = "Update quantity" onChange={(event)=>setNewQuantity(event.target.value)}/>
                 <button className ="smallButton" 
                 onClick={()=>updateItemQuantity(val.id)}>Update</button>
               </div>
+
               <div className='centeredDiv'>
-                <input type = "text" 
+                <input type = "text" className ="updateOrDeleteBox"
                 placeholder = "Deletion message" onChange={(event)=>setDeletionMessage(event.target.value)}/>
                 <button className ="smallButton" 
                 onClick={()=>deleteOrRestoreItem(val.id, 0)}>Delete</button>
@@ -119,14 +121,14 @@ function App() {
         
       <h3 id = "deletedText">{deletedText}</h3>
         {itemList
-        .filter(val => val.quantity==0)
+        .filter(val => val.quantity===0)
         .map((val, key) => 
          <div className ="item" key={key}>
             <h3>Name: {val.name}</h3> 
             <h3>Quantity: {val.quantity}</h3>
             <button className='mediumButton'
             onClick={()=>deleteOrRestoreItem(val.id, 1)}>Undelete</button>
-            <p>Message: {val.deletedText}</p>
+            <p className = "deletion">Message: {val.deletedText}</p>
           </div>
         )}
 
