@@ -1,6 +1,6 @@
 # My submission for Shopify's backend challenge for Fall.
 
-<img src="https://i.imgur.com/PgzqHk0.gif" width="1440" height="1920" />
+<img src="https://i.imgur.com/PgzqHk0.gif" width="600" height="800" />
 
 It uses Express, Node.js and MySQL for the backend and React for the frontend. 
 
