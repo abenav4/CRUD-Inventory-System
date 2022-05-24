@@ -3,6 +3,24 @@ It uses Express, Node.js and MySQL for the backend and React for the frontend! :
 
 <img src="https://i.imgur.com/PgzqHk0.gif" width="600" height="800" />
 
+## Installation
+
+To install relevant dependencies:
+```
+npm install
+```
+To run node server:
+
+```
+node index.js
+```
+To start application:
+```
+npm start
+```
+Then go to port 3000 (localhost:3000) to see the application in use!
+
+
 For items and data to persist, you must use the MySQL database.
 Connecting that database to the project is as simple as editing the values in lines 14-17 of /server/index.js with your respective database information.
 
