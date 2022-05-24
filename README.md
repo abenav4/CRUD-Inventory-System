@@ -5,16 +5,16 @@ It uses Express, Node.js and MySQL for the backend and React for the frontend! :
 
 ## Installation
 
-To install relevant dependencies:
+To install relevant dependencies (in both /server/ and /client/)
 ```
 npm install
 ```
-To run node server:
+To run node server (within /server/ in console:
 
 ```
 node index.js
 ```
-To start application:
+To start application (in /client/)
 ```
 npm start
 ```
