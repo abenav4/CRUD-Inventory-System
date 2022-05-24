@@ -4,21 +4,24 @@ It uses Express, Node.js and MySQL for the backend and React for the frontend! :
 <img src="https://i.imgur.com/PgzqHk0.gif" width="600" height="800" />
 
 ## Installation
-
-To install relevant dependencies (in both /server/ and /client/)
+1. Clone the repository locally.
+```
+git clone https://github.com/abenav4/Shopify-Backend-Challenge-2022.git
+```
+2. To install relevant dependencies (in both /server/ and /client/)
 ```
 npm install
 ```
-To run node server (within /server/ in console:
+3. To run node server (within /server/ in console:
 
 ```
 node index.js
 ```
-To start application (in /client/)
+4. To start application (in /client/)
 ```
 npm start
 ```
-Then go to port 3000 (localhost:3000) to see the application in use!
+5. Open http://localhost:3000 to view the app in your browser.
 
 
 For items and data to persist, you must use the MySQL database.
