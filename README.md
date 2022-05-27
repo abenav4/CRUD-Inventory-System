@@ -1,4 +1,4 @@
-# Inventory tracking web application
+# CRUD Inventory Tracking System
 It uses Express, Node.js and MySQL for the backend and React for the frontend! :scream: :scream:
 
 <img src="https://i.imgur.com/PgzqHk0.gif" width="600" height="800" />
