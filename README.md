@@ -36,4 +36,4 @@ const db = mysql.createConnection({
     database: 'itemSystem'
 });
 ```
-Thanks for checking it out! :metal:
+## Thank you for checking it out! :metal:&#127999;
